@@ -1,0 +1,16 @@
+{
+    "status":1,//1表示成功，0表示失败
+    "errorInfo":"用户没有权限查看",//status为0时，前端展示errorinfo
+    
+}
+//前端向后端发送的内容
+{
+    "userId":"admin",
+    "userName":"用户一",
+    "data":{
+        "userName":"用户一",
+        "description":"巴拉巴拉",
+        "userTeam":"用户组一",
+        "roleTeam":"角色组一"
+    }
+}

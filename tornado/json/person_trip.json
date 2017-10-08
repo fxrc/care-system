@@ -1,0 +1,29 @@
+{
+    "totalNum": 30,
+    "normolNum": 20,
+    "normolWord": "正常时间归寝",
+    "unNormolWord": "晚于23点归寝",
+    "colName": [
+        "通过公寓号",
+        "离开时间",
+        "进入时间"
+    ],
+    "propName": [
+        "department",
+        "exitTime",
+        "entryTime"
+    ],
+    "data": [
+        {
+            "department": "2#",
+            "exitTime": "2017-01-01 20:33:45",
+            "entryTime": "2017-01-01 20:00:00"
+        }
+    ]
+}
+//只传输近一个月的出行记录
+//前端给后端发送的参数
+{
+    "stuId": "11012231",
+    "userId": "admin",
+}

@@ -1,0 +1,12 @@
+{
+    "status": 1, //1表示成功，0表示失败
+    "errorInfo": "用户没有权限设置", //status为0时，前端展示errorinfo
+}
+//前端向后端发送的内容
+{
+    "userId": "admin",
+    "data": {
+        "name": "角色组三",
+        "description": "巴拉巴拉",
+    }
+}

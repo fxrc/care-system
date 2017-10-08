@@ -1,0 +1,19 @@
+{
+    "status": 1, //status为1表示成功，为0表示失败,只有为1的时候，data内才有值
+    "data": {
+        "index": 0, //0表示不可以看
+        "person": 0,
+        "officeExport": 0,
+        "officeSuggestion": 0,
+        "dataUpdateBasic": 0,
+        "dataUpdateScore": 0,
+        "systemUserTeam": 0, //用户组权限设定页
+        "systemRoleTeam": 0, //角色组权限设定页
+        "systemUsers": 0, //用户设定页
+    }
+}
+//前端发送给后端的内容
+{
+    "userId": "admin",
+    "password": "XXXXX",
+}

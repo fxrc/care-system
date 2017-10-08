@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "name":"一号角色组",
+            "description":"巴拉巴拉",
+        },
+        {
+            "name":"二号角色组",
+            "description":"巴拉巴拉",
+        }
+    ]
+}
+//前端向后端发送的内容
+{
+    "userId":"admin"
+}

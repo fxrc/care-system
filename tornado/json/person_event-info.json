@@ -1,0 +1,33 @@
+{
+    "colName": [
+        "时间",
+        "事件主题",
+        "事件内容",
+        "事件记录人"
+    ],
+    "propName": [
+        "time",
+        "thmeme",
+        "content",
+        "author"
+    ],
+    "data": [
+        {
+                time: "2017-04-04 20:55:55",
+                thmeme: "王导员的一次记录",
+                content: "今天跟XXX聊天，感觉到XXX有XXX倾向，记录下",
+                author: "admin"
+        },
+        {
+                time: "2017-04-07 20:55:55",
+                thmeme: "李导员的一次记录",
+                content: "今天跟XXX聊天，感觉到XXX有XXX倾向，记录下",
+                author: "admin"
+        }
+    ]
+}
+//前端发送给后端的参数
+{
+    "stuId": "11012231",
+    "userId": "admin",
+}

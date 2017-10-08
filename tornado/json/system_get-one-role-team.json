@@ -1,0 +1,18 @@
+{
+    "data": {
+        "index": 0, //0表示不可以看
+        "person": 0,
+        "officeExport": 0,
+        "officeSuggestion": 0,
+        "dataUpdateBasic": 0,
+        "dataUpdateScore": 0,
+        "systemUserTeam": 0, //用户组权限设定页
+        "systemRoleTeam": 0, //角色组权限设定页
+        "systemUsers": 0 //用户设定页
+    },
+}
+//前端向后端发送的内容
+{
+    "userId": "admin",
+    "userTeamName": "一号用户组"
+}

@@ -1,0 +1,38 @@
+{
+    "scoreInfo": {
+        "totalNum": 30, //查询到的该生的考试数量
+        "failNum": 30, //其中挂科的数量
+        "colName": [
+            "课程号",
+            "课序号",
+            "初始成绩",
+            "补考成绩",
+            "考试时间",
+            "是否重修"
+        ],
+        "propName": [
+            "courseID",
+            "courseIndex",
+            "initialScore",
+            "makeUpScore",
+            "examDate",
+            "repairOrNot"
+        ],
+        "data": [
+            {
+                "courseID": "EC5444646355", //课程号
+                "courseIndex": "1", //课序号
+                "initialScore": "45.2", //初始成绩
+                "makeUpScore": "0", //补考成绩
+                "examDate": "2017-01-04 20:20:50", //考试时间
+                "repairOrNot": "是" //是否重修
+            },
+            {}
+        ]
+    }
+}
+//前端发送给后端的参数
+{
+    "stuId": "11012231",
+    "userId": "admin",
+}

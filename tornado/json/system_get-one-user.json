@@ -1,0 +1,14 @@
+{
+    "data":{
+        "name":"用户一",
+        "description":"巴拉巴拉",
+        "userTeamName":"用户组一",
+        "roleTeamName":"角色组一",
+        "passWord": "XXX"
+    }
+}
+//前端向后端发送的内容
+{
+    "userId":"admin",
+    "userName":"用户一",
+}

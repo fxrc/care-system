@@ -1,0 +1,32 @@
+{
+    "basicInfo":{
+        "stuID":"110410120",
+        "stuClassNumber":"1104101",
+        "stuName":"张三",
+        "sex":"男",
+        "nationality":"汉族",
+        "politicalLandscape":"党员",
+        "stuEducation":"本科",
+        "idNumber":"610112411512210598",
+        "apartmentNumber":"6",
+        "dormitoryNumber":"404",
+        "graduatedHighSchool":"XX高中",
+        "stuMobileNumber":"18363120012",
+        "homeAddress":"XX省XX市场",
+        "fatherName":"张三爸",
+        "fatherWorkUnit":"XX工作单位",
+        "fatherMobileNumber":"18363120013",
+        "motherName":"张三妈",
+        "motherWorkUnit":"XX工作单位",
+        "motherMobileNumber":"18363120014" 
+    },
+    "focusInfo":{
+        "focusReason":"延期毕业",
+        "focusLevel":"推介关注"//当为正常或者毕业时，Reason为空
+    }
+}
+//前端发送给后端的参数
+{
+    "stuId":"11012231",
+    "userId":"admin",
+}

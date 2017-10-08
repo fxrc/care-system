@@ -1,0 +1,10 @@
+{
+    "status":1,
+    "errorInfo":""
+}
+//前端传给后端的内容
+{
+    "userId":"admin",
+    "content":"巴拉巴拉",
+    "start":5//打了几分，满分5
+}

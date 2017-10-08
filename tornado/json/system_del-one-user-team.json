@@ -1,0 +1,9 @@
+{
+    "status":1,//1表示成功，0表示失败
+    "errorInfo":"还有用户存在于该用户组内"//status为0时，前端展示errorinfo
+}
+//前端向后端发送的内容
+{
+    "userId":"admin",
+    "userTeamName":"一号用户组",
+}

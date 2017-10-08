@@ -1,0 +1,11 @@
+首页--关注学生一览:indexMajor
+首页--学生数据(权限内):indexStudents
+个人页:person
+办公页面--数据导出:officeDataExpore
+办公页面--意见反馈:officeSuggestions
+系统管理--用户组管理:systemUserTeam
+系统管理--用户管理:systemUsers
+系统管理--角色组管理:systemRoleTeam
+数据维护--学生基本数据增量导入: dataUpdateBasic
+数据维护--学生成绩数据增量导入: dataUpdateScore
+数据维护--学生成绩数据增量导入: dataUpdateFocus

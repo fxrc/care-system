@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>57d201a1-6b21-49b7-b8e2-e993623f29a8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>tornado</Name>
+    <RootNamespace>tornado</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="api_define.py" />
+    <Compile Include="common\data_clean.py" />
+    <Compile Include="common\get_id_from_roles_team.py" />
+    <Compile Include="common\get_id_from_users_team.py" />
+    <Compile Include="common\get_nowuser_role.py" />
+    <Compile Include="common\get_stu_abnormal_cost.py" />
+    <Compile Include="common\get_stu_abnormal_sleep.py" />
+    <Compile Include="common\get_team.py" />
+    <Compile Include="common\get_total_class.py" />
+    <Compile Include="common\get_stu_basic_data_by_user_data.py" />
+    <Compile Include="common\get_total_page.py" />
+    <Compile Include="common\get_user_role.py" />
+    <Compile Include="common\judge_permission.py" />
+    <Compile Include="common\watch_redis.py" />
+    <Compile Include="common\__init__.py" />
+    <Compile Include="data\update_basic.py" />
+    <Compile Include="data\update_score.py" />
+    <Compile Include="data\__init__.py" />
+    <Compile Include="data_ pretreatment\calculate\get_abnormal_stu.py" />
+    <Compile Include="data_ pretreatment\calculate\get_abnormal_stu_cost.py" />
+    <Compile Include="data_ pretreatment\calculate\get_abnormal_stu_score.py" />
+    <Compile Include="data_ pretreatment\calculate\get_abnormal_stu_sleep.py" />
+    <Compile Include="data_ pretreatment\calculate\orm.py" />
+    <Compile Include="data_ pretreatment\calculate\updata_stu_cost_count.py" />
+    <Compile Include="data_ pretreatment\calculate\updata_stu_score_count.py" />
+    <Compile Include="data_ pretreatment\calculate\updata_stu_sleep_count.py" />
+    <Compile Include="data_ pretreatment\calculate\__init__.py" />
+    <Compile Include="data_ pretreatment\Main.py" />
+    <Compile Include="data_ pretreatment\server\handler\abnormal_stu.py" />
+    <Compile Include="data_ pretreatment\server\handler\__init__.py" />
+    <Compile Include="data_ pretreatment\server\request.py" />
+    <Compile Include="data_ pretreatment\server\tornado_main.py" />
+    <Compile Include="data_ pretreatment\server\url.py" />
+    <Compile Include="data_ pretreatment\server\__init__.py" />
+    <Compile Include="data_ pretreatment\updata_mysql.py" />
+    <Compile Include="index\focus_table.py" />
+    <Compile Include="index\grow_bar.py" />
+    <Compile Include="index\grow_line.py" />
+    <Compile Include="index\__init__.py" />
+    <Compile Include="login\login_if_pass.py" />
+    <Compile Include="login\login_session.py" />
+    <Compile Include="login\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="office\export.py" />
+    <Compile Include="office\suggestion.py" />
+    <Compile Include="office\__init__.py" />
+    <Compile Include="orm.py" />
+    <Compile Include="person\get_event.py" />
+    <Compile Include="person\add_event.py" />
+    <Compile Include="person\add_focus.py" />
+    <Compile Include="person\cancel_foucs.py" />
+    <Compile Include="person\card.py" />
+    <Compile Include="person\static_info.py" />
+    <Compile Include="person\score.py" />
+    <Compile Include="person\trip.py" />
+    <Compile Include="person\__init__.py" />
+    <Compile Include="system\add_one_user_team.py" />
+    <Compile Include="system\add_one_role_team.py" />
+    <Compile Include="system\add_one_user.py" />
+    <Compile Include="system\del_one_role_team.py" />
+    <Compile Include="system\del_one_user.py" />
+    <Compile Include="system\del_one_user_team.py" />
+    <Compile Include="system\get_one_role_team.py" />
+    <Compile Include="system\get_one_user.py" />
+    <Compile Include="system\get_one_user_team.py" />
+    <Compile Include="system\get_total_role_team.py" />
+    <Compile Include="system\get_total_user.py" />
+    <Compile Include="system\get_total_user_team.py" />
+    <Compile Include="system\set_one_role_team.py" />
+    <Compile Include="system\set_one_user.py" />
+    <Compile Include="system\set_one_user_team.py" />
+    <Compile Include="system\__init__.py" />
+    <Compile Include="urls.py" />
+    <Compile Include="views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="common\" />
+    <Folder Include="data\" />
+    <Folder Include="data_ pretreatment\" />
+    <Folder Include="data_ pretreatment\calculate\" />
+    <Folder Include="data_ pretreatment\calculate\__pycache__\" />
+    <Folder Include="data_ pretreatment\server\" />
+    <Folder Include="data_ pretreatment\server\handler\" />
+    <Folder Include="data_ pretreatment\server\handler\__pycache__\" />
+    <Folder Include="data_ pretreatment\server\__pycache__\" />
+    <Folder Include="data_ pretreatment\__pycache__\" />
+    <Folder Include="index\" />
+    <Folder Include="ini\" />
+    <Folder Include="json\" />
+    <Folder Include="login\" />
+    <Folder Include="office\" />
+    <Folder Include="person\" />
+    <Folder Include="system\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data_ pretreatment\calculate\__pycache__\get_abnormal_stu.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\get_abnormal_stu_cost.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\get_abnormal_stu_score.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\get_abnormal_stu_sleep.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\orm.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\updata_stu_cost_count.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\updata_stu_score_count.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\updata_stu_sleep_count.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\calculate\__pycache__\__init__.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\handler\__pycache__\abnormal_stu.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\handler\__pycache__\__init__.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\__pycache__\request.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\__pycache__\tornado_main.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\__pycache__\url.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\server\__pycache__\__init__.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\__pycache__\testmain.cpython-35.pyc" />
+    <Content Include="data_ pretreatment\__pycache__\updata_mysql.cpython-35.pyc" />
+    <Content Include="ini\page.ini" />
+    <Content Include="json\data-get-model-basic.json" />
+    <Content Include="json\data_update-basic.json" />
+    <Content Include="json\data_update-score.json" />
+    <Content Include="json\index_focus-table.json" />
+    <Content Include="json\index_grow-bar.json" />
+    <Content Include="json\index_grow-line.json" />
+    <Content Include="json\login_if-pass.json" />
+    <Content Include="json\login_session.json" />
+    <Content Include="json\office_expore.json" />
+    <Content Include="json\office_suggestion.json" />
+    <Content Include="json\person_add-event.json" />
+    <Content Include="json\person_add-focus.json" />
+    <Content Include="json\person_cancel-focus.json" />
+    <Content Include="json\person_card.json" />
+    <Content Include="json\person_event-info.json" />
+    <Content Include="json\person_score-info.json" />
+    <Content Include="json\person_static-info.json" />
+    <Content Include="json\person_trip.json" />
+    <Content Include="json\system_add-one-role-team.json" />
+    <Content Include="json\system_add-one-user-team.json" />
+    <Content Include="json\system_add-one-user.json" />
+    <Content Include="json\system_del-one-role-team.json" />
+    <Content Include="json\system_del-one-user-team.json" />
+    <Content Include="json\system_del-one-user.json" />
+    <Content Include="json\system_get-one-role-team.json" />
+    <Content Include="json\system_get-one-user-team.json" />
+    <Content Include="json\system_get-one-user.json" />
+    <Content Include="json\system_get-total-role-team.json" />
+    <Content Include="json\system_get-total-user-team.json" />
+    <Content Include="json\system_get-total-user.json" />
+    <Content Include="json\system_set-one-role-team.json" />
+    <Content Include="json\system_set-one-user-team.json" />
+    <Content Include="json\system_set-one-user.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,18 @@
+{
+    "status":1,//1表示成功，0表示失败
+    "errorInfo":"用户没有权限设置",//status为0时，前端展示errorinfo
+    
+}
+//前端向后端发送的内容
+{
+    "userId":"admin",
+    "userName":"用户一",
+    "data":{
+        "userName":"用户一",
+        "description":"巴拉巴拉",
+        "userTeam":"用户组一",
+        "roleTeam":"角色组一",
+        "oldPassWord":"1234",//oldPassWord与newPassword成对出现。如果在data中没有该关键字，则表示不需要修改密码。
+        "newPassWord":"6789"
+    }
+}

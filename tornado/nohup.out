@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "main.py", line 16, in <module>
+    app.listen(port)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/web.py", line 1850, in listen
+    server.listen(port, address)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/netutil.py", line 194, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "main.py", line 8, in <module>
+    import views
+  File "/root/student/views.py", line 16, in <module>
+    from person.add_event import AddEvent
+  File "/root/student/person/add_event.py", line 29
+    new_event_message.create(**{"createDate": time, "messContent": content, "fromUserId": user_id, "messTitle": theme, "stuId": stu_id)
+                                                                                                                                      ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "main.py", line 16, in <module>
+    app.listen(port)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/web.py", line 1850, in listen
+    server.listen(port, address)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/tcpserver.py", line 126, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/root/anaconda3/lib/python3.5/site-packages/tornado/netutil.py", line 194, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "main.py", line 17, in <module>
+    socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
+NameError: name 'socket' is not defined
