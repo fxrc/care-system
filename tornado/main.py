@@ -5,13 +5,14 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import tornado.ioloop
 import tornado.web
 import tornado.httpserver
+import traceback
 import views
 import urls
-
+from multiprocessing import Manager, freeze_support
 
 port = 8006
 
-def main(first, app):
+def main(first, app, num = 1):
     if str(first) == 'duo':
         freeze_support()
         print ("Quit the server with CONTROL-C.")
@@ -24,10 +25,15 @@ def main(first, app):
         print ("Starting development server at http://127.0.0.1:" + str(port) )
         print ("Quit the server with CONTROL-C.")
         tornado.ioloop.IOLoop.instance().start()
+    else:
+        pass
 
 if __name__ == "__main__":
     app = urls.application
     try:
-        main("duo", app)
+        main("dan", app)
+        #main("duo", app, 10)
     except:
+        error_info = traceback.format_exc()
+        print (error_info)
         main("dan", app)
