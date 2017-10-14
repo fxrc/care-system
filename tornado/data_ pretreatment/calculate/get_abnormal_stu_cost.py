@@ -6,12 +6,12 @@ def getAbnormalStuCost(startdate,enddate,days,maxMoney):
         result = judgeStuAbnormalCost(startdate, enddate,maxMoney,days)
         return {'status': 1, 'data': result}
     except (Exception) as e:
-        print(e)
-        return {'status': 0, 'errorInfo': "操作出错，请稍候再试", 'data': ''}
+        raise
 
 
 def judgeStuAbnormalCost(startdate,enddate,maxMoney,days):
-    stuRecord = stu_cost_count.select()
+    with db_data.execution_context():
+        stuRecord = stu_cost_count.select()
     result=[]
     totaldays=180
     startdates = startdate.split('-')

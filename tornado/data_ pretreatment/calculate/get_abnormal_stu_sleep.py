@@ -11,12 +11,14 @@ def getAbnormalStuSleep(startdate,enddate,days):
         result = judgeStuAbnormalSleep(startdate, enddate, days)
         return {'status': 1, 'data': result}
     except (Exception) as e:
-        print(e)
-        return {'status': 0, 'errorInfo': "操作出错，请稍候再试", 'data': ''}
+        raise e
+        # print(e)
+        # return {'status': 0, 'errorInfo': "操作出错，请稍候再试", 'data': ''}
 
 
 def judgeStuAbnormalSleep(startdate,enddate,days):
-    stuRecord=stu_sleep_count.select()
+    with db_data.execution_context():
+        stuRecord=stu_sleep_count.select()
     result=[]
     totaldays=180
     startdates = startdate.split('-')
