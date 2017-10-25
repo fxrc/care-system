@@ -21,11 +21,13 @@ def updataStuCostCount():
         with db_data.execution_context():
             allStuId = stu_basic_info.select(stu_basic_info.stuID)
             allstu=[]
-            for i in range(len(allStuId)):
+
+        for i in range(len(allStuId)):
+            with db_data.execution_context():
                 stu=countCostDays(allStuId[i].stuID)
                 allstu.append(stu)
-            with db_data.atomic():
-                stu_cost_count.insert_many(allstu).execute()
+        with db_data.atomic():
+            stu_cost_count.insert_many(allstu).execute()
     logger.info('updata stu_cost_count is ok')
     print('updata stu_cost_count is ok')
     return {'status': 1}

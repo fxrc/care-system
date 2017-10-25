@@ -28,6 +28,9 @@ class UpdateFocus(update_focus):
             success_update_count = 0
             with db.execution_context():
                 for data in allData["data"]:
+                    if '' in data.values():
+                        res.append([data["stuID"]])
+                        continue
                     judge = stu_focus.select().where(stu_focus.stuID == data["stuID"]).aggregate(fn.Count(stu_focus.stuID))
                     data['createDate'] = str(data['createDate'])
                     if str(data['level']) == "重点关注":

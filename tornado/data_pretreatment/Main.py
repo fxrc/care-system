@@ -11,7 +11,7 @@ from logConfig import logger,errorMessage
 
 if __name__=='__main__':
     try:
-        #updataStuCostCount()
+        updataStuCostCount()
         # updataStuSleepCount()
         # updataStuScoreCount()
         print('updata mysql is ok')

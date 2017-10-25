@@ -275,3 +275,347 @@
 [2017-10-21 14:23:44] views.py INFO :user: admin request url: /system/get-one-user is successful
 [2017-10-21 14:24:17] views.py INFO :user: admin request url: /system/get-total-user-team is successful
 [2017-10-21 14:24:19] views.py INFO :user: admin request url: /system/get-one-user-team is successful
+[2017-10-21 14:34:23] views.py INFO :user: admin request url: /system/get-one-user-team is successful
+[2017-10-21 14:36:24] views.py INFO :user: admin request url: /system/add-one-user-team is successful
+[2017-10-21 14:36:24] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:36:27] views.py INFO :user: admin request url: /system/get-one-user-team is successful
+[2017-10-21 14:36:37] views.py INFO :user: admin request url: /system/set-one-user-team is successful
+[2017-10-21 14:36:37] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:36:43] views.py INFO :user: admin request url: /system/del-one-user-team is successful
+[2017-10-21 14:38:21] views.py INFO :user: admin request url: /system/get-one-user-team is successful
+[2017-10-21 14:38:27] views.py INFO :user: admin request url: /system/set-one-user-team is successful
+[2017-10-21 14:38:27] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:39:24] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:39:29] views.py INFO :user: admin request url: /system/get-one-role-team is successful
+[2017-10-21 14:39:33] views.py INFO :user: admin request url: /system/del-one-role-team is successful
+[2017-10-21 14:39:33] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:39:37] views.py INFO :user: admin request url: /system/del-one-role-team is successful
+[2017-10-21 14:40:04] views.py INFO :user: admin request url: /system/add-one-role-team is successful
+[2017-10-21 14:40:04] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:40:24] views.py INFO :user: admin request url: /system/get-one-role-team is successful
+[2017-10-21 14:40:46] views.py INFO :user: admin request url: /system/set-one-role-team is successful
+[2017-10-21 14:40:46] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:41:09] views.py INFO :user: admin request url: /system/del-one-role-team is successful
+[2017-10-21 14:41:09] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:45:55] views.py INFO :user: admin request url: /system/get-total-user is successful
+[2017-10-21 14:45:55] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:45:55] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:46:00] views.py INFO :user: admin request url: /system/del-one-user is successful
+[2017-10-21 14:46:00] views.py INFO :user: admin request url: /system/get-total-user is successful
+[2017-10-21 14:46:12] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:46:15] views.py INFO :user: admin request url: /system/del-one-user-team is successful
+[2017-10-21 14:46:15] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:46:17] views.py INFO :user: admin request url: /system/get-total-user is successful
+[2017-10-21 14:46:17] views.py INFO :user: admin request url: /system/get-total-role-team is successful
+[2017-10-21 14:46:17] views.py INFO :user: admin request url: /system/get-total-user-team is successful
+[2017-10-21 14:46:57] views.py INFO :user: admin request url: /system/add-one-user is successful
+[2017-10-21 14:46:57] views.py INFO :user: admin request url: /system/get-total-user is successful
+[2017-10-21 14:47:14] login_if_pass.py INFO :用户：testuser 登录
+[2017-10-21 14:47:14] views.py INFO :user: testuser request url: /login/if-pass is successful
+[2017-10-21 14:47:21] views.py INFO :user: testuser request url: /index/focus-table is successful
+[2017-10-21 14:47:29] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:47:31] views.py INFO :user: testuser request url: /system/get-one-role-team is successful
+[2017-10-21 14:47:35] views.py INFO :user: testuser request url: /system/get-one-role-team is successful
+[2017-10-21 14:47:41] views.py INFO :user: testuser request url: /system/set-one-role-team is successful
+[2017-10-21 14:47:41] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:47:53] login_if_pass.py INFO :用户：testuser 登录
+[2017-10-21 14:47:53] views.py INFO :user: testuser request url: /login/if-pass is successful
+[2017-10-21 14:48:22] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:48:22] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:48:22] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:48:27] views.py INFO :user: testuser request url: /system/get-one-user is successful
+[2017-10-21 14:49:49] views.py INFO :user: testuser request url: /system/get-one-user is successful
+[2017-10-21 14:49:59] views.py INFO :user: testuser request url: /system/set-one-user is successful
+[2017-10-21 14:49:59] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:50:10] login_if_pass.py INFO :用户：testuser 登录失败，原因：密码错误
+[2017-10-21 14:50:10] views.py INFO :user: testuser request url: /login/if-pass is successful
+[2017-10-21 14:50:15] login_if_pass.py INFO :用户：testuser 登录
+[2017-10-21 14:50:15] views.py INFO :user: testuser request url: /login/if-pass is successful
+[2017-10-21 14:50:20] views.py INFO :user: testuser request url: /index/focus-table is successful
+[2017-10-21 14:50:26] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:50:26] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:50:26] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:50:42] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:50:45] views.py INFO :user: testuser request url: /system/get-one-role-team is successful
+[2017-10-21 14:50:49] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:50:50] views.py INFO :user: testuser request url: /system/get-one-user-team is successful
+[2017-10-21 14:50:55] views.py INFO :user: testuser request url: /system/set-one-user-team is successful
+[2017-10-21 14:50:55] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:50:58] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:50:58] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:50:58] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:51:00] views.py INFO :user: testuser request url: /system/get-one-user is successful
+[2017-10-21 14:51:07] views.py INFO :user: testuser request url: /system/set-one-user is successful
+[2017-10-21 14:51:07] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:51:17] login_if_pass.py INFO :用户：testuser 登录
+[2017-10-21 14:51:17] views.py INFO :user: testuser request url: /login/if-pass is successful
+[2017-10-21 14:51:20] views.py INFO :user: testuser request url: /index/focus-table is successful
+[2017-10-21 14:52:53] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:52:53] request.py ERROR : 	list index out of range
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 24--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 17--errorfunc: is_open()--errorsource: return func(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 54--errorfunc: post()--errorsource: result=AbnormalStu().entry(startdate,enddate,int(sleepdays),int(moneydays),int(failnum),float(maxmoney),allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/handler/abnormal_stu.py--line: 6--errorfunc: entry()--errorsource: return getAbnormalStu(startdate,enddate,sleepdays,moneydays,failnum,maxmoney,allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu.py--line: 16--errorfunc: getAbnormalStu()--errorsource: result.append(getAbnormalStuCost(startdate,enddate,moneydays,maxmoney)) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu_cost.py--line: 6--errorfunc: getAbnormalStuCost()--errorsource: result = judgeStuAbnormalCost(startdate, enddate,maxMoney,days) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu_cost.py--line: 22--errorfunc: judgeStuAbnormalCost()--errorsource: disdays2=(stuRecord[0].countDate.date()-endDate.date()).days 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3254--errorfunc: __getitem__()--errorsource: return res._result_cache[value] 
+
+[2017-10-21 14:52:53] views.py INFO :user: testuser request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:53:07] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:53:07] request.py ERROR : 	list index out of range
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 24--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 17--errorfunc: is_open()--errorsource: return func(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 54--errorfunc: post()--errorsource: result=AbnormalStu().entry(startdate,enddate,int(sleepdays),int(moneydays),int(failnum),float(maxmoney),allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/handler/abnormal_stu.py--line: 6--errorfunc: entry()--errorsource: return getAbnormalStu(startdate,enddate,sleepdays,moneydays,failnum,maxmoney,allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu.py--line: 16--errorfunc: getAbnormalStu()--errorsource: result.append(getAbnormalStuCost(startdate,enddate,moneydays,maxmoney)) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu_cost.py--line: 6--errorfunc: getAbnormalStuCost()--errorsource: result = judgeStuAbnormalCost(startdate, enddate,maxMoney,days) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu_cost.py--line: 22--errorfunc: judgeStuAbnormalCost()--errorsource: disdays2=(stuRecord[0].countDate.date()-endDate.date()).days 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3254--errorfunc: __getitem__()--errorsource: return res._result_cache[value] 
+
+[2017-10-21 14:53:07] views.py INFO :user: testuser request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:53:23] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:53:25] views.py INFO :user: testuser request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:53:40] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:53:41] views.py INFO :user: testuser request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:53:56] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:53:58] views.py INFO :user: testuser request url: /system/get-one-user-team is successful
+[2017-10-21 14:54:01] views.py INFO :user: testuser request url: /system/get-total-role-team is successful
+[2017-10-21 14:54:01] views.py INFO :user: testuser request url: /system/get-total-user-team is successful
+[2017-10-21 14:54:01] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:54:03] views.py INFO :user: testuser request url: /system/get-one-user is successful
+[2017-10-21 14:54:07] views.py INFO :user: testuser request url: /system/set-one-user is successful
+[2017-10-21 14:54:07] views.py INFO :user: testuser request url: /system/get-total-user is successful
+[2017-10-21 14:54:11] login_if_pass.py INFO :用户：admin 登录
+[2017-10-21 14:54:11] views.py INFO :user: admin request url: /login/if-pass is successful
+[2017-10-21 14:54:18] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:54:20] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:54:25] views.py INFO :user: admin request url: /person/score is successful
+[2017-10-21 14:54:25] views.py INFO :user: admin request url: /person/get-event is successful
+[2017-10-21 14:54:25] views.py INFO :user: admin request url: /person/static-info is successful
+[2017-10-21 14:54:25] views.py INFO :user: admin request url: /person/trip is successful
+[2017-10-21 14:54:27] views.py INFO :user: admin request url: /person/card is successful
+[2017-10-21 14:54:57] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:54:58] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:55:23] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:55:24] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:55:32] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:55:33] request.py ERROR : 	list index out of range
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 24--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 17--errorfunc: is_open()--errorsource: return func(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 54--errorfunc: post()--errorsource: result=AbnormalStu().entry(startdate,enddate,int(sleepdays),int(moneydays),int(failnum),float(maxmoney),allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/handler/abnormal_stu.py--line: 6--errorfunc: entry()--errorsource: return getAbnormalStu(startdate,enddate,sleepdays,moneydays,failnum,maxmoney,allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu.py--line: 28--errorfunc: getAbnormalStu()--errorsource: for stu in result[0]['data']: 
+
+[2017-10-21 14:55:33] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:55:46] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:55:46] request.py ERROR : 	list index out of range
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 24--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 17--errorfunc: is_open()--errorsource: return func(self_request) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/request.py--line: 54--errorfunc: post()--errorsource: result=AbnormalStu().entry(startdate,enddate,int(sleepdays),int(moneydays),int(failnum),float(maxmoney),allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/server/handler/abnormal_stu.py--line: 6--errorfunc: entry()--errorsource: return getAbnormalStu(startdate,enddate,sleepdays,moneydays,failnum,maxmoney,allstuid) 
+	file: /home/wwf/care-system-master/tornado/data_pretreatment/calculate/get_abnormal_stu.py--line: 28--errorfunc: getAbnormalStu()--errorsource: for stu in result[0]['data']: 
+
+[2017-10-21 14:55:46] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:56:46] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:56:48] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:56:59] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:57:01] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:57:30] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 14:57:30] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 14:57:54] orm.py WARNING :this mysql username is not root
+[2017-10-21 14:57:54] updata_stu_cost_count.py INFO :updata stu_cost_count
+[2017-10-21 15:00:03] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:00:04] views.py ERROR : user: admin request url: /office/get-abnormal-stu is fail
+	HTTPConnectionPool(host='127.0.0.1', port=8002): Max retries exceeded with url: /getabnormalstu (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x7ffa2a5fc780>: Failed to establish a new connection: [Errno 111] Connection refused',))
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 417--errorfunc: post()--errorsource: self.finish(GetAbnormalStu().entry(self)) 
+	file: /home/wwf/care-system-master/tornado/office/get_abnormal_stu.py--line: 53--errorfunc: entry()--errorsource: raise e 
+	file: /home/wwf/care-system-master/tornado/office/get_abnormal_stu.py--line: 45--errorfunc: entry()--errorsource: r = requests.post(url=myurl, data=request_data) 
+	file: /usr/lib/python3/dist-packages/requests/api.py--line: 107--errorfunc: post()--errorsource: return request('post', url, data=data, json=json, **kwargs) 
+	file: /usr/lib/python3/dist-packages/requests/api.py--line: 53--errorfunc: request()--errorsource: return session.request(method=method, url=url, **kwargs) 
+	file: /usr/lib/python3/dist-packages/requests/sessions.py--line: 468--errorfunc: request()--errorsource: resp = self.send(prep, **send_kwargs) 
+	file: /usr/lib/python3/dist-packages/requests/sessions.py--line: 576--errorfunc: send()--errorsource: r = adapter.send(request, **kwargs) 
+	file: /usr/lib/python3/dist-packages/requests/adapters.py--line: 437--errorfunc: send()--errorsource: raise ConnectionError(e, request=request) 
+
+[2017-10-21 15:17:48] updata_stu_cost_count.py INFO :updata stu_cost_count is ok
+[2017-10-21 15:54:22] login_if_pass.py INFO :用户：admin 登录
+[2017-10-21 15:54:22] views.py INFO :user: admin request url: /login/if-pass is successful
+[2017-10-21 15:54:30] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:54:32] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 15:54:45] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:54:48] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 15:54:55] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:54:57] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 15:55:01] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:55:04] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-21 15:55:10] connectionpool.py INFO :Starting new HTTP connection (1): 127.0.0.1
+[2017-10-21 15:55:13] views.py INFO :user: admin request url: /office/get-abnormal-stu is successful
+[2017-10-25 16:03:10] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:03:40] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:07:17] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:08:04] login_if_pass.py INFO :用户：admin 登录
+[2017-10-25 16:08:04] views.py INFO :user: admin request url: /login/if-pass is successful
+[2017-10-25 16:08:52] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:08:52] views.py ERROR : user: null request url: /data/update-score is fail
+	invalid literal for int() with base 10: ''
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /home/wwf/care-system-master/tornado/data/update_score.py--line: 32--errorfunc: entry()--errorsource: judge = exam_results.select().where(exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).aggregate(fn.Count(exam_results.courseID)) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3154--errorfunc: aggregate()--errorsource: return self._aggregate(aggregation).scalar(convert=convert) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2919--errorfunc: scalar()--errorsource: row = self.tuples().first() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3198--errorfunc: first()--errorsource: return self.peek(n=n) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3188--errorfunc: peek()--errorsource: res = self.execute() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3233--errorfunc: execute()--errorsource: self._qr = ResultWrapper(model_class, self._execute(), query_meta) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2911--errorfunc: _execute()--errorsource: sql, params = self.sql() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3201--errorfunc: sql()--errorsource: return self.compiler().generate_select(self) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2026--errorfunc: generate_select()--errorsource: return self.build_query(clauses, alias_map) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1912--errorfunc: build_query()--errorsource: return self.parse_node(Clause(*clauses), alias_map) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1757--errorfunc: _parse_clause()--errorsource: node.nodes, alias_map, conv, node.glue) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1890--errorfunc: parse_node_list()--errorsource: node_sql, node_params = self.parse_node(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1727--errorfunc: _parse_expression()--errorsource: lhs, lparams = self.parse_node(node.lhs, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1728--errorfunc: _parse_expression()--errorsource: rhs, rparams = self.parse_node(node.rhs, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1856--errorfunc: _parse()--errorsource: value = conv.db_value(node) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1014--errorfunc: db_value()--errorsource: return value if value is None else self.coerce(value) 
+
+[2017-10-25 16:10:10] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:10:10] views.py ERROR : user: null request url: /data/update-score is fail
+	invalid literal for int() with base 10: ''
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /home/wwf/care-system-master/tornado/data/update_score.py--line: 32--errorfunc: entry()--errorsource: judge = exam_results.select().where(exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).aggregate(fn.Count(exam_results.courseID)) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3154--errorfunc: aggregate()--errorsource: return self._aggregate(aggregation).scalar(convert=convert) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2919--errorfunc: scalar()--errorsource: row = self.tuples().first() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3198--errorfunc: first()--errorsource: return self.peek(n=n) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3188--errorfunc: peek()--errorsource: res = self.execute() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3233--errorfunc: execute()--errorsource: self._qr = ResultWrapper(model_class, self._execute(), query_meta) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2911--errorfunc: _execute()--errorsource: sql, params = self.sql() 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 3201--errorfunc: sql()--errorsource: return self.compiler().generate_select(self) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 2026--errorfunc: generate_select()--errorsource: return self.build_query(clauses, alias_map) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1912--errorfunc: build_query()--errorsource: return self.parse_node(Clause(*clauses), alias_map) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1757--errorfunc: _parse_clause()--errorsource: node.nodes, alias_map, conv, node.glue) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1890--errorfunc: parse_node_list()--errorsource: node_sql, node_params = self.parse_node(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1727--errorfunc: _parse_expression()--errorsource: lhs, lparams = self.parse_node(node.lhs, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1831--errorfunc: _parse()--errorsource: sql, params = self._parse_map[node_type](node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1728--errorfunc: _parse_expression()--errorsource: rhs, rparams = self.parse_node(node.rhs, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1865--errorfunc: parse_node()--errorsource: sql, params, unknown = self._parse(node, alias_map, conv) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1856--errorfunc: _parse()--errorsource: value = conv.db_value(node) 
+	file: /usr/local/lib/python3.5/dist-packages/peewee.py--line: 1014--errorfunc: db_value()--errorsource: return value if value is None else self.coerce(value) 
+
+[2017-10-25 16:12:03] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:12:10] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:12:10] views.py ERROR : user: null request url: /data/update-score is fail
+	No active exception to reraise
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /home/wwf/care-system-master/tornado/data/update_score.py--line: 34--errorfunc: entry()--errorsource: raise 
+
+[2017-10-25 16:18:05] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:18:05] views.py ERROR : user: null request url: /data/update-score is fail
+	No active exception to reraise
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /home/wwf/care-system-master/tornado/data/update_score.py--line: 34--errorfunc: entry()--errorsource: raise 
+
+[2017-10-25 16:20:49] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:20:53] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:20:53] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:20:59] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:21:00] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:21:12] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:21:12] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:22:05] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:22:05] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:24:30] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:24:37] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:24:37] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:24:52] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:24:52] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:26:03] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:26:03] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:28:29] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:28:41] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:28:41] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:30:16] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:30:17] views.py INFO :user: null request url: /data/update-score is successful
+[2017-10-25 16:32:45] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:33:08] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:33:08] views.py ERROR : user: null request url: /data/update-score is fail
+	dict_values([1502201, '', 0.0, '考查', 0, '陈冠华', 200700022, '精密光电测量技术与创新实践', '任选', 1502203, 2331, '2017-07-30', 1]) is not JSON serializable
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /home/wwf/care-system-master/tornado/data/update_score.py--line: 55--errorfunc: entry()--errorsource: return json.dumps(returndata, ensure_ascii=False) 
+	file: /usr/lib/python3.5/json/__init__.py--line: 237--errorfunc: dumps()--errorsource: **kw).encode(obj) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 198--errorfunc: encode()--errorsource: chunks = self.iterencode(o, _one_shot=True) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 256--errorfunc: iterencode()--errorsource: return _iterencode(o, 0) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 179--errorfunc: default()--errorsource: raise TypeError(repr(o) + " is not JSON serializable") 
+
+[2017-10-25 16:34:39] orm.py WARNING :this mysql username is not root
+[2017-10-25 16:34:43] views.py CRITICAL :
+	request:/data/update-score is not contain userId
+
+[2017-10-25 16:34:43] views.py ERROR : user: null request url: /data/update-score is fail
+	dict_values(['陈冠华', '2017-07-30', 2331, 0.0, 200700022, '精密光电测量技术与创新实践', '任选', 1502201, 1502203, 1, '', 0, '考查']) is not JSON serializable
+	file: /home/wwf/care-system-master/tornado/logConfig.py--line: 76--errorfunc: errorMessage()--errorsource: raise error 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 75--errorfunc: diyPost()--errorsource: post(self_request) 
+	file: /home/wwf/care-system-master/tornado/views.py--line: 398--errorfunc: post()--errorsource: self.finish(update.entry(file)) 
+	file: /usr/local/lib/python3.5/dist-packages/tornado/web.py--line: 965--errorfunc: finish()--errorsource: self.write(chunk) 
+	file: /usr/local/lib/python3.5/dist-packages/tornado/web.py--line: 715--errorfunc: write()--errorsource: chunk = escape.json_encode(chunk) 
+	file: /usr/local/lib/python3.5/dist-packages/tornado/escape.py--line: 82--errorfunc: json_encode()--errorsource: return json.dumps(value).replace("</", "<\\/") 
+	file: /usr/lib/python3.5/json/__init__.py--line: 230--errorfunc: dumps()--errorsource: return _default_encoder.encode(obj) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 198--errorfunc: encode()--errorsource: chunks = self.iterencode(o, _one_shot=True) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 256--errorfunc: iterencode()--errorsource: return _iterencode(o, 0) 
+	file: /usr/lib/python3.5/json/encoder.py--line: 179--errorfunc: default()--errorsource: raise TypeError(repr(o) + " is not JSON serializable") 
+
+[2017-10-25 16:37:59] views.py INFO :user: admin request url: /office/suggestion is successful
+[2017-10-25 17:00:08] orm.py WARNING :this mysql username is not root
