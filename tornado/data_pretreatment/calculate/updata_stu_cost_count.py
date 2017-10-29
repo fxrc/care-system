@@ -10,6 +10,7 @@ def updataStuCostCount():
     nowdate = datetime.today()-day  #昨天
     with db_data.execution_context():
         old_count = stu_cost_count.select()
+    #old_count=[]
     restart = 0  # 用于判断是否要重新更新表
     if len(old_count) > 0:
         if nowdate.date() != old_count[0].countDate.date():  # 判断表里的数据是否是最新的
@@ -23,6 +24,7 @@ def updataStuCostCount():
             allstu=[]
 
         for i in range(len(allStuId)):
+            logger.info(str(i))
             with db_data.execution_context():
                 stu=countCostDays(allStuId[i].stuID)
                 allstu.append(stu)
@@ -33,7 +35,7 @@ def updataStuCostCount():
     return {'status': 1}
 
 def countCostDays(stuId):
-    nowStuRecord = MyBaseModel.returnList2(stu_transaction_record.select().where(stu_transaction_record.stuID == stuId))
+    nowStuRecord = MyBaseModel.returnList2(stu_transaction_record.select(stu_transaction_record.tradingTime,stu_transaction_record.turnover).where(stu_transaction_record.stuID == stuId))
     disdays=365                 #只统计最近180天的消费
     day=timedelta(days=1)
     endDate = datetime.today()-day  #今天的前一天
@@ -44,15 +46,16 @@ def countCostDays(stuId):
     for i in range(disdays):
         nowdate = startDate + day * i
         todayMoney = 0.0
-        while addr != len(nowStuRecord):
+        addr=0
+        for addr in range(len( nowStuRecord)):
             if nowStuRecord[addr].tradingTime.date() == nowdate.date():
                 if nowStuRecord[addr].turnover < 0: #消费
                     todayMoney = todayMoney + nowStuRecord[addr].turnover
-                nowStuRecord.pop(addr)
+                #nowStuRecord.pop(addr)
                 continue
             if (nowStuRecord[addr].tradingTime.date() - nowdate.date()).days >0:
                 break   #到了另一天的刷卡记录，跳出循环,下次进入循环仍然从当前位置开始
-            addr = addr + 1
+            #addr = addr + 1
 
         dis=(nowdate.date() - startDate.date()).days
         record[dis]=abs(todayMoney)

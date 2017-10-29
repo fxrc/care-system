@@ -1,6 +1,7 @@
 from calculate.orm import *
 from datetime import datetime
 import os
+from logConfig import logger,errorMessage
 def getAbnormalStuCost(startdate,enddate,days,maxMoney):
     try:
         result = judgeStuAbnormalCost(startdate, enddate,maxMoney,days)
@@ -13,7 +14,7 @@ def judgeStuAbnormalCost(startdate,enddate,maxMoney,days):
     with db_data.execution_context():
         stuRecord = stu_cost_count.select()
     result=[]
-    totaldays=180
+    totaldays=365
     startdates = startdate.split('-')
     enddates = enddate.split('-')
     startDate = datetime(int(startdates[0]), int(startdates[1]), int(startdates[2]))

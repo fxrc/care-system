@@ -12,8 +12,9 @@ from logConfig import logger,errorMessage
 if __name__=='__main__':
     try:
         updataStuCostCount()
-        # updataStuSleepCount()
-        # updataStuScoreCount()
+        #updataStuSleepCount()
+        updataStuScoreCount()
+        updataStuSleepCount()
         print('updata mysql is ok')
         print('start tornado and updata_mysql')
         if os.name=='posix':
