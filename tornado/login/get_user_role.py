@@ -5,8 +5,8 @@ import json
 
 class GetUserRole(get_user_role):
     def entry(self, response_self):
-        body = eval(response_self.request.body)
-        user_name = str(body["userId"])
+        body = response_self.request.body
+        user_name = body.decode('utf-8')
         r=redis.Redis(host='127.0.0.1',port=6379)
         result=r.get(user_name)
         if result!=None:

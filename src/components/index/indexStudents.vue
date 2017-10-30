@@ -112,9 +112,7 @@
       handleEdit(index, row) {
         this.$store.commit("setStuId", {stuid: row['stuID']})
         localStorage.stuID = row['stuID']
-        //window.open("http://localhost:8080/#/person")
-        window.open("/#/person")
-        
+        window.open("http://localhost:8080/#/person")
       },
       register(index) {
         return (el) => {

@@ -30,7 +30,7 @@ class Session(object):
     def __setitem__(self,key,value):
         # user = chenchap   pwd = 123.com
         r = redis.Redis(host='127.0.0.1', port=6379)
-        middle = r.set(self._id, value, ex=1800)
+        middle = r.set(value,self._id, ex=1800)
         return middle    #登陆状态保持30分中
 
     def __delitem__(self, key):

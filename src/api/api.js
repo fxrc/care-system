@@ -3,7 +3,7 @@
 import {
     systemGetTotalUsersUrl, systemAddOneUserUrl, systemGetTotalRoleTeamUrl,
     systemGetTotalUserTeamUrl, systemGetOneUserUrl, systemSetOneUserUrl, systemDelOneUserUrl, systemAddOneUserTeamUrl, systemDelOneUserTeamUrl, systemSetOneUserTeamUrl, systemGetOneUserTeamUrl, systemAddOneRoleTeamUrl, systemDelOneRoleTeamUrl, systemSetOneRoleTeamUrl, systemGetOneRoleTeamUrl, officeSuggestionUrl, officeDataExporeUrl, indexMajorFocusTableUrl, indexMajorFocusGrowLineUrl, indexMajorFocusGrowBarUrl, personGetBasicUrl, personGetEventInfoUrl, personGetPersonScoreInfoUrl, personGetPersonTripInfoUrl, personGetPersonCardfInfoUrl,
-    personAddEventInfoUrl, personAddFocusInfoUrl, personCancelFocusInfoUrl, loginUrl, officeDataFilterUrl
+    personAddEventInfoUrl, personAddFocusInfoUrl, personCancelFocusInfoUrl, loginUrl, officeDataFilterUrl, loginGetUserRoleUrl
 } from "@/api/httpapi"
 import { myAxios } from '@/main'
 

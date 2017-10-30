@@ -12,6 +12,7 @@ import 'element-ui/lib/theme-default/index.css'
 import 'font-awesome/css/font-awesome.min.css'
 import axios from 'axios'
 import $ from 'jquery'
+import {loginGetUserRoleUrl} from '@/api/httpapi'
 
 Vue.prototype.$http = axios
 export const myAxios = axios
@@ -48,32 +49,30 @@ router.beforeEach((to, from, next) => {
 })
 
 function isLogin(userid) {
-  if (store.state.userid != '') {
-    return true
-  }
+  let flag
+  if (store.state.userid)
+    flag = true
   else {
-    if (!localStorage.userid) {
-      return false
+    var xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let res = JSON.parse(this.responseText)
+        if (res['status'] == 1) {
+          store.commit('setUserId', {"userid": userid})
+          store.commit('setPagePower', res.data)
+          flag = true
+        }
+        else {
+          flag = false
+        }
+      }
     }
-    else {
-      store.commit('setUserId', {"userid": userid})
-      store.commit('setPagePower', {
-        datafilter: 1,
-        dataupdatebasic: 1,
-        dataupdatefocus: 1,
-        dataupdatescore: 1,
-        indexmajor: 1,
-        indexstudents: 1,
-        officedataexpore: 1,
-        officesuggestions: 1,
-        person: 1,
-        systemroleteam: 1,
-        systemusers: 1,
-        systemuserteam: 1,
-      })
-      return true
-    }
+    xhttp.open("POST", loginGetUserRoleUrl, false)
+    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+    xhttp.send(userid)
   }
+  console.log(flag)
+  return flag
 }
 
 /* eslint-disable no-new */

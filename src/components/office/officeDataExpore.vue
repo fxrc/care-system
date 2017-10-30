@@ -98,10 +98,6 @@
           inputValue: 'report',
           inputValidator: this.judgeMessageIfEmpty
         }).then(({value}) => {
-          //officeDataToExcel(this.inputDataForSearch, value, this.$store.state.userid).then((data) => {
-          //  console.log(data)
-
-          //})
           let b = [['姓名', '性别', '学号', '专业', '民族', '公寓', '房间号', '身份证号', '政治面貌', '学历', '毕业高中', '联系电话', '家庭住址', '状态']]
           for (let i = 0; i < this.tableInfoTemp.data.length; i++) {
             b.push([this.tableInfoTemp.data[i].stuName,
@@ -135,36 +131,7 @@
             message: '取消输入'
           });
         });
-      }
-      /*
-        this.$prompt('请输入文件名', '提示', {
-            confirmButtonText: '确定',
-            cancelButtonText: '取消',
-            inputValue: 'report',
-            inputErrorMessage: '',
-            inputValidator: this.judgeMessageIfEmpty,
-        }).then(({ value }) => {
-            let data = { "title": this.tableInfoShow['colName'], "data": [] }
-            for (var dataIndex in this.tableInfoShow['data']) {
-                data['data'].push([])
-                for (var name in this.tableInfoShow['propName']) {
-                    data['data'][dataIndex].push(this.tableInfoShow['data'][dataIndex][this.tableInfoShow['propName'][name]])
-                }
-            }
-            if (data == '')
-                return
-            JSONToExcelConvertor(data.data, value, data.title)
-            this.$notify.success({
-                title: '消息',
-                message: '导出成功'
-            })
-        }).catch(() => {
-            this.$notify.info({
-                title: '消息',
-                message: '取消输入'
-            })
-        });
-    }*/,
+      },
       judgeMessageIfEmpty(value) {
         if (value.length == 0) {
           return "文件名不能为空"
@@ -234,7 +201,7 @@
         this.loadingButton = false
       },
       delInputDataForSearch() {
-        this.currrentPage2 = 1
+        this.currentPage2 = 1
         this.inputDataForSearch = ''
         this.tableInfoTemp = this.tableInfoTotal
         this.tableInfoShow['data'] = []
