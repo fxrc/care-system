@@ -12,6 +12,11 @@ users = [
   {'name':'root','pwd':'nslab'},
 ]
 
+
+class change_user_pwd():
+    def entry():
+        pass
+
 class grow_line():
 
     def entry():

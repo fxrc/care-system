@@ -47,7 +47,8 @@ HANDLERS = [
     (r"/login/if-pass", LoginIfPassHandler),
     (r"/login/session", LoginSessionHandler),
     (r"/office/get-abnormal-stu",GetAbnormalStuHandler),
-    (r"/login/get-user-role",GetUserRoleHandler)
+    (r"/login/get-user-role",GetUserRoleHandler),
+    (r"/login/change-user-pwd",ChangeUserPwdHandler)
 ]
 
 application = tornado.web.Application(

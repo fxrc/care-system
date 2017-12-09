@@ -9,6 +9,7 @@ from index.grow_line import GrowLine
 
 from login.login_if_pass import LoginIfPass
 from login.login_session import LoginSession
+from login.change_user_pwd import ChangeUserPwd
 
 from office.export import Export
 from office.suggestion import Suggestion
@@ -94,6 +95,11 @@ class BaseHandler(tornado.web.RequestHandler):
         self.set_header("Access-Control-Allow-Headers", "x-requested-with,authorization")
         self.set_header('Access-Control-Allow-Methods', 'POST,GET,PUT,DELETE,OPTIONS')
         # self.my_session = Session(self)
+
+class ChangeUserPwdHandler(BaseHandler):
+    @getErrorMessage
+    def post(self):
+        self.finish(ChangeUserPwd().entry(self))
 
 class GetUserRoleHandler(BaseHandler):
     @getErrorMessage
