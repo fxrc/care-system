@@ -23,30 +23,33 @@ def updataStuCostCount():
             allStuId = stu_basic_info.select(stu_basic_info.stuID)
             allstu=[]
 
-        for i in range(len(allStuId)):
-            logger.info(str(i))
+        for i in range(len(allStuId)):	#len(allStuId)
             with db_data.execution_context():
                 stu=countCostDays(allStuId[i].stuID)
                 allstu.append(stu)
-        with db_data.atomic():
-            stu_cost_count.insert_many(allstu).execute()
+                if i%1000 ==0 or i==(len(allStuId)-1):
+                    logger.info(str(i)) 
+                    with db_data.atomic():
+                        stu_cost_count.insert_many(allstu).execute()
+                    allstu=[]
+                        
     logger.info('updata stu_cost_count is ok')
     print('updata stu_cost_count is ok')
     return {'status': 1}
 
 def countCostDays(stuId):
     nowStuRecord = MyBaseModel.returnList2(stu_transaction_record.select(stu_transaction_record.tradingTime,stu_transaction_record.turnover).where(stu_transaction_record.stuID == stuId))
-    disdays=365                 #只统计最近180天的消费
+    disdays=365                 #只统计最近365天的消费
     day=timedelta(days=1)
     endDate = datetime.today()-day  #今天的前一天
     startDate= endDate-day*disdays
     record=np.zeros(disdays)
 
-    addr=0  #这边初始化一次，下面不用在初始化了
+    #addr=0  #这边初始化一次，下面不用在初始化了
     for i in range(disdays):
         nowdate = startDate + day * i
         todayMoney = 0.0
-        addr=0
+        #addr=0
         for addr in range(len( nowStuRecord)):
             if nowStuRecord[addr].tradingTime.date() == nowdate.date():
                 if nowStuRecord[addr].turnover < 0: #消费
