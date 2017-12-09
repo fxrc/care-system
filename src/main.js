@@ -12,6 +12,7 @@ import 'element-ui/lib/theme-default/index.css'
 import 'font-awesome/css/font-awesome.min.css'
 import axios from 'axios'
 import $ from 'jquery'
+import {loginGetUserRoleUrl} from '@/api/httpapi'
 
 Vue.prototype.$http = axios
 export const myAxios = axios
@@ -32,85 +33,47 @@ router.beforeEach((to, from, next) => {
     store.commit("delUserId");
   }
   let user = store.state.userid
-  if (user == "" && to.path != '/login') {
-    next({ path: '/login' })
-  } else {
-    switch(to.path){
-      case '/indexMajor':
-        if(store.state.pagePower['indexMajor'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/indexStudents':
-        if(store.state.pagePower['indexStudents'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/person':
-        if(store.state.pagePower['person'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/officeDataExpore':
-        if(store.state.pagePower['officeDataExpore'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/officeSuggestions':
-        if(store.state.pagePower['officeSuggestions'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/systemUserTeam':
-        if(store.state.pagePower['systemUserTeam'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/systemUsers':
-        if(store.state.pagePower['systemUsers'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/systemRoleTeam':
-        if(store.state.pagePower['systemRoleTeam'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/dataUpdateBasic':
-        if(store.state.pagePower['dataUpdateBasic'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/dataUpdateScore':
-        if(store.state.pagePower['dataUpdateScore'] != true){
-          next({path: '/login'});
-        }
-        break;
-
-      case '/dataFilter':
-        if(store.state.pagePower['dataFilter'] != true){
-          next({path: '/login'});
-        }
-        break;
-    
-      case '/dataUpdateFocus':
-        if(store.state.pagePower['dataUpdateFocus'] != true){
-          next({path: '/login'});
-        }
-        break;
+  if (to.meta.requiresAuth) {
+    if (!isLogin(localStorage.userid)) {
+      next({
+        path: '/login',
+        query: {redirect: to.fullPath}
+      })
+    } else {
+      next()
     }
-     next()
+  }
+  else {
+    next()
   }
 })
+
+function isLogin(userid) {
+  let flag
+  if (store.state.userid)
+    flag = true
+  else {
+    var xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let res = JSON.parse(this.responseText)
+        if (res['status'] == 1) {
+          store.commit('setUserId', {"userid": userid})
+          store.commit('setPagePower', res.data)
+          flag = true
+        }
+        else {
+          flag = false
+        }
+      }
+    }
+    xhttp.open("POST", loginGetUserRoleUrl, false)
+    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+    xhttp.send(userid)
+  }
+  console.log(flag)
+  return flag
+}
 
 /* eslint-disable no-new */
 new Vue({
@@ -118,5 +81,5 @@ new Vue({
   router,
   store,
   template: '<App/>',
-  components: { App }
+  components: {App}
 })

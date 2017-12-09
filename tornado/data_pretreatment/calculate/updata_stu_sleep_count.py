@@ -37,15 +37,15 @@ def countSleepDays(stuId):
     disdays=365                 #只统计最近180天的归寝记录
     day=timedelta(days=1)
     endDate = datetime.today()-day  #今天的前一天
-    startDate= endDate-day*disdays
-    record=np.zeros(disdays)
+    startDate= endDate-day*(disdays-1)
+    record=np.zeros(disdays+1)
     size=len(nowStuRecord)
     startFlag=0
     for i in range(size):
         if nowStuRecord[i].entryDate != None and startFlag == 0:
             if (nowStuRecord[i].entryDate.date() - startDate.date()).days >= 0:
                 startFlag = 1
-        if startFlag == 1:
+        if startFlag == 1 :
             if nowStuRecord[i].exitDate != None:  # 出去的时间不为null
                 if i < len(nowStuRecord) - 1 and nowStuRecord[i + 1].entryDate != None:  # 进来的时间不为null且还不是最后一个记录
                     if nowStuRecord[i].exitDate.date() != nowStuRecord[i + 1].entryDate.date():  # 外出跟回来不是同一天
