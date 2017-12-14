@@ -3,7 +3,7 @@
 import {
     systemGetTotalUsersUrl, systemAddOneUserUrl, systemGetTotalRoleTeamUrl,
     systemGetTotalUserTeamUrl, systemGetOneUserUrl, systemSetOneUserUrl, systemDelOneUserUrl, systemAddOneUserTeamUrl, systemDelOneUserTeamUrl, systemSetOneUserTeamUrl, systemGetOneUserTeamUrl, systemAddOneRoleTeamUrl, systemDelOneRoleTeamUrl, systemSetOneRoleTeamUrl, systemGetOneRoleTeamUrl, officeSuggestionUrl, officeDataExporeUrl, indexMajorFocusTableUrl, indexMajorFocusGrowLineUrl, indexMajorFocusGrowBarUrl, personGetBasicUrl, personGetEventInfoUrl, personGetPersonScoreInfoUrl, personGetPersonTripInfoUrl, personGetPersonCardfInfoUrl,
-    personAddEventInfoUrl, personAddFocusInfoUrl, personCancelFocusInfoUrl, loginUrl, officeDataFilterUrl, loginGetUserRoleUrl
+    personAddEventInfoUrl, personAddFocusInfoUrl, personCancelFocusInfoUrl, loginUrl, officeDataFilterUrl, loginGetUserRoleUrl, loginChangeUserPwdUrl
 } from "@/api/httpapi"
 import { myAxios } from '@/main'
 
@@ -17,6 +17,18 @@ export const login = (data) => {
         )
     })
     return p
+}
+
+//修改密码
+export const ChangeUserPwd = (userid, oldpwd, newpwd1, newpwd2) => {
+  var p = new Promise(function (resolve, reject) {
+    myAxios.post(loginChangeUserPwdUrl, { userId: userid, oldpwd: oldpwd, newpwd1: newpwd1, newpwd2: newpwd2 },{ headers: { 'Content-Type': 'application/json' }}).then(
+      (res) => {
+        resolve(res['data'])
+      }
+    )
+  })
+  return p
 }
 
 //获取首页列表框要展示的数据以及列的名+数据的key

@@ -45,7 +45,7 @@
                 不及格科目
               </div>
               <div class="opt-right">
-                <span style="width:20%; display: inline-block;">补考不及格科目数量</span> >=
+                <span style="display: inline-block;">补考不及格科目数量</span> >=
                 <el-input v-model="selectData.sbjNumber" style="width:60px;margin-left: 10px;" size="mini"></el-input>
               </div>
             </div>
@@ -58,7 +58,7 @@
     </el-row>
     <el-row style="margin-top:30px">
       <el-col :span="22" :offset="1">
-        <el-table :data="tableInfoShow['data']" style="width: 100%" highlight-current-row height="500">
+        <el-table :data="tableInfoShow['data']" style="width: 100%" highlight-current-row height="500" v-loading="load">
           <template v-for="(item, index) in tableInfoShow['colName']">
             <el-table-column :prop="tableInfoShow['propName'][index]" :label="item" :key="item.key"
                              v-if="tableInfoShow['propName'][index]!='state'" align='center'>
@@ -96,6 +96,7 @@
   export default {
     data() {
       return {
+        load: false,
         currentPage1: 1,
         stuNum :0,
         tableInfo: [],
@@ -196,6 +197,7 @@
           });
           return;
         }
+        this.load = true
         officeDataFilter(data).then((res) => {
           if (res.status == 1) {
             for (var i = 0; i < 10; i++) {
@@ -208,6 +210,7 @@
             for (let i = 0; i < 10 && i < this.stuNum; i++) {
               this.tableInfoShow['data'][i] = this.tableInfo['data'][i]
             }
+            this.load = false
           }
           else {
             //console.log("error");

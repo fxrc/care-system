@@ -1,9 +1,10 @@
 //与后端真实交互的可复用函数均写在这里，方便随时切换调试和线上状态
 
-const basicUrl = "api"
+const basicUrl = "/api"
 
 export const loginUrl = basicUrl + "/login/if-pass"
 export const loginGetUserRoleUrl = basicUrl + "/login/get-user-role"
+export const loginChangeUserPwdUrl = basicUrl + "/login/change-user-pwd"
 
 export const dataUpdateBasicUrl =  basicUrl + "/data/update-basic"
 export const dataUpdateBasicUrlGetModel = basicUrl + "/static/model_basic_excel.xlsx"
