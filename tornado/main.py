@@ -17,7 +17,7 @@ else:
     start_mathod  = 'duo'
 from multiprocessing import Manager, freeze_support
 from logConfig import logger,errorMessage
-port = 8006
+port = 8000
 
 def main(first, app, num = 10):
     if str(first) == 'duo':

@@ -21,8 +21,11 @@ def updataStuScoreCount():
             allstu = []
             for i in range(len(allStuId)):
                 allstu.append(countScoreNum(allStuId[i].stuID))
-            with db_data.atomic():
-                stu_score_count.insert_many(allstu).execute()
+                if i%1000 ==0 or i==(len(allStuId)-1):
+                    logger.info(str(i)) 
+                    with db_data.atomic():
+                        stu_score_count.insert_many(allstu).execute()
+                    allstu=[]
     logger.info('updata stu_score_count is ok')
     print('updata stu_score_count is ok')
     return {'status': 1}

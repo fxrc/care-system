@@ -25,8 +25,11 @@ def updataStuSleepCount():
             for i in range(len(allStuId)):
                 stu=countSleepDays(allStuId[i].stuID)
                 allstu.append(stu)
-            with db_data.atomic():
-                stu_sleep_count.insert_many(allstu).execute()
+                if i%1000 ==0 or i==(len(allStuId)-1):
+                    logger.info(str(i)) 
+                    with db_data.atomic():
+                        stu_sleep_count.insert_many(allstu).execute()
+                    allstu=[]
     print('updata stu_sleep_count is ok')
     logger.info('updata stu_sleep_count is ok')
     return {'status': 1}
