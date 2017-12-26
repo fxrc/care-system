@@ -165,7 +165,8 @@
       },
       handleEdit: function (index, row) {
         this.$store.commit("setStuId", {stuid: row['stuID']})
-        this.$router.push({path: "/person"})
+        //this.$router.push({path: "/person"})
+        window.open("/#/person")
         //setStuId
       },
       tableRowStyle: function (row) {
