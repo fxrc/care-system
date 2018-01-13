@@ -20,7 +20,7 @@ def judgeStuAbnormalSleep(startdate,enddate,days):
     with db_data.execution_context():
         stuRecord=stu_sleep_count.select()
     result=[]
-    totaldays=180
+    totaldays=365
     startdates = startdate.split('-')
     enddates = enddate.split('-')
     startDate = datetime(int(startdates[0]), int(startdates[1]), int(startdates[2]))

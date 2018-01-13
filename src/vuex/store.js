@@ -63,12 +63,13 @@ const state = {
     },//页面对应的名称，小写转大写
 
     userid: "",//用户名
-    stuid: ""//学生学号,用于个人页处理
+    stuid: "",//学生学号,用于个人页处理
+    state: 0
 }
 
 // 定义所需的 mutations
 const mutations = {
-    setIndexState: (state, paras) => {
+  setIndexState: (state, paras) => {
         state.indexState = paras.index
     },
     setPagePower: (state, paras) => {

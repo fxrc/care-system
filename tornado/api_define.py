@@ -237,3 +237,8 @@ class login_session():
 class get_abnormal_stu():
     def entry():
         pass
+
+
+class get_user_role():
+    def entry():
+        pass

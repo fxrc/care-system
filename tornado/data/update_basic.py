@@ -29,6 +29,9 @@ class UpdateBasic(update_basic):
             success_update_count = 0
             with db.execution_context():
                 for data in allData["data"]:
+                    if '' in data.values():
+                        res.append([data["stuID"]])
+                        continue
                     judge = stu_basic_info.select().where(stu_basic_info.stuID == data["stuID"]).aggregate(fn.Count(stu_basic_info.stuID))
                     try:
                         if judge >= 1:
