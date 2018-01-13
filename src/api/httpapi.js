@@ -3,6 +3,8 @@
 const basicUrl = ""
 
 export const loginUrl = basicUrl + "/login/if-pass"
+export const loginGetUserRoleUrl = basicUrl + "/login/get-user-role"
+export const loginChangeUserPwdUrl = basicUrl + "/login/change-user-pwd"
 
 export const dataUpdateBasicUrl =  basicUrl + "/data/update-basic"
 export const dataUpdateBasicUrlGetModel = basicUrl + "/static/model_basic_excel.xlsx"

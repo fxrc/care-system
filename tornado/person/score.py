@@ -59,7 +59,7 @@ class PersonScore(person_score):
         exam_data_temp = MyBaseModel.returnList(exam_results.select().where(exam_results.stuID ==stu_id).dicts())
         # print(exam_data_temp)
         for recode in exam_data_temp:
-            if recode['remarks'] == "":
+            if recode['remarks'] == "" or recode['remarks']=='未知':
                 recode['remarks'] = '无'
         exam_data = pd.DataFrame(exam_data_temp)
         if len(exam_data.index) != 0:

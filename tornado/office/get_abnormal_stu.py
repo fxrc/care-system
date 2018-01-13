@@ -38,7 +38,7 @@ class GetAbnormalStu(get_abnormal_stu):
 
             day = timedelta(days=1)
             enddate=datetime.today().date()
-            startdate=(datetime.today()-day*179).date()
+            startdate=(datetime.today()-day*364).date()
             request_data = {'startdate':str(startdate) , 'enddate':str(enddate), 'sleepdays': sleepdays,
                             'moneydays': moneydays, 'failnum':sbjNumber,'maxmoney': maxmoney,'allstuid':allStuId}
 

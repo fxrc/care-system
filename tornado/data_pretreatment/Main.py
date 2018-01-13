@@ -7,13 +7,20 @@ from multiprocessing import Pool
 import os
 import traceback
 import sys
+import time
 from logConfig import logger,errorMessage
 
 if __name__=='__main__':
     try:
-        #updataStuCostCount()
-        # updataStuSleepCount()
-        # updataStuScoreCount()
+        while(True):
+            try:
+                updataStuCostCount()
+                #updataStuSleepCount()
+                updataStuScoreCount()
+                updataStuSleepCount()
+                break
+            except:
+                time.sleep(7200)    #每隔两小时检测一次数据库是否导入完成
         print('updata mysql is ok')
         print('start tornado and updata_mysql')
         if os.name=='posix':

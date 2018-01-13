@@ -28,16 +28,20 @@ class UpdateScore(update_score):
             success_update_count = 0
             with db.execution_context():
                 for data in allData["data"]:
-                    judge = exam_results.select().where(exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).aggregate(fn.Count(exam_results.courseID))
+                    if '' in data.values():
+                        # res.append(data.values())
+                        res.append([data['stuID'], data["courseID"], data["courseIndex"]])
+                        continue
+                    judge = exam_results.select().where(exam_results.stuID==data['stuID'], exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).aggregate(fn.Count(exam_results.courseID))
                     try:
                         if judge >= 1:
-                            exam_results.update(**data).where(exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).execute()
+                            exam_results.update(**data).where(exam_results.stuID==data['stuID'],exam_results.courseIndex == data["courseIndex"], exam_results.courseID == data["courseID"]).execute()
                             success_update_count += 1
                         else:
                             exam_results.create(**data)
                             success_create_count += 1
                     except:
-                        res.append([data["courseID"], data["courseIndex"]])
+                        res.append([data['stuID'],data["courseID"], data["courseIndex"]])
             if len(res) == 0:
                 #表示本次全部都导入成功了
                 returndata["status"] = 1
@@ -47,5 +51,5 @@ class UpdateScore(update_score):
                 returndata["status"] = 2
                 returndata["errorInfo"] = "系统本次总共接收到%d个数据\n未成功导入的数据数量为%d个\n导入动作完成后,新增了%d条数据,覆盖了%d条数据"%(len(allData["data"]), len(res), success_create_count, success_update_count)
                 returndata["file"] = res
-
+            # return returndata
             return json.dumps(returndata, ensure_ascii=False)
